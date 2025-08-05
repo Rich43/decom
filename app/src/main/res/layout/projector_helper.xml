@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_help_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_18dp"
+            android:layout_marginTop="20dp"
+            android:src="0x7f070224"/>
+        <TextView
+            android:textSize="21dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_18dp"
+            android:layout_marginTop="25dp"
+            android:text="How to pair with my projector"/>
+        <ListView
+            android:id="@+id/lv_help_project_tips"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size_18dp"
+            android:layout_marginBottom="70dp"
+            android:divider="@null"/>
+    </LinearLayout>
+    <TextView
+        android:textSize="@dimen/size_16dp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:id="@+id/tv_need_help"
+        android:background="@drawable/bg_mirror_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_20dp"
+        android:text="Need more help?"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

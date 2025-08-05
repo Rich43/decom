@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_method_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_18dp"
+            android:layout_marginTop="20dp"
+            android:src="0x7f070224"/>
+        <TextView
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#e5fffc"
+            android:ellipsize="end"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_24sp"
+            android:layout_marginTop="15dp"
+            android:text="Firmware Update Instructions"
+            android:singleLine="true"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+            <TextView
+                android:textSize="@dimen/size_16dp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="On your projector, navigate to \10the Settings page."/>
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:src="0x7f0701ca"/>
+            <TextView
+                android:textSize="@dimen/size_16dp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Update to begin process"/>
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:src="0x7f070256"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

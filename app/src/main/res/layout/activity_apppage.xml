@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.caglobal.kodakluma.view.FixedLayout
+        android:id="@+id/vertical_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+        <include
+            app:layout_percent="6"
+            layout="@layout/luma_header"/>
+        <include
+            app:layout_percent="84"
+            layout="@layout/luma_content"/>
+        <include
+            app:layout_percent="10"
+            layout="@layout/luma_footer"/>
+    </com.caglobal.kodakluma.view.FixedLayout>
+</RelativeLayout>

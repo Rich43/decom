@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:paddingLeft="18dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_luma_about_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="0x7f070224"/>
+    <TextView
+        android:textSize="21sp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="@string/tv_setting_about"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="#e5fffc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Current version:"/>
+    <TextView
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:id="@+id/tv_app_verison"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_2dp"
+        android:text="1.0"/>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg_rate_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/bg_rate_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="330dp">
+        <TextView
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_dialog_title"
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/tv_reminder"/>
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:src="@mipmap/lomaicon"/>
+        <TextView
+            android:textSize="21dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Enjoying Kodak Luma?"/>
+        <TextView
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tap a star to rate it on the \10Google Play Store."/>
+        <ImageView
+            android:background="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="@dimen/size_15dp"/>
+        <TextView
+            android:textSize="@dimen/size_20dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Rate now"/>
+        <ImageView
+            android:background="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="13dp"/>
+        <TextView
+            android:textSize="@dimen/size_16dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_not_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Not Now"/>
+    </LinearLayout>
+</LinearLayout>

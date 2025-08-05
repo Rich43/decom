@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_bottom_navigation"
+    android:paddingLeft="@dimen/size_30dp"
+    android:paddingRight="@dimen/size_30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageButton
+        android:id="@+id/ibn_main_remote"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/luma_luma_remote_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ibn_main_apps"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageButton
+        android:id="@+id/ibn_main_apps"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/luma_app_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ibn_main_settings"
+        app:layout_constraintStart_toEndOf="@+id/ibn_main_remote"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageButton
+        android:id="@+id/ibn_main_settings"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/luma_setting_seletor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ibn_main_apps"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

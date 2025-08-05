@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/tutorial_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="@dimen/size_18dp"
+            android:textColor="#ffb500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="37dp"
+            android:text="@string/tv_app_launch"/>
+        <TextView
+            android:textSize="@dimen/size_18dp"
+            android:textStyle="bold"
+            android:textColor="#ffb500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="37dp"
+            android:text="@string/tv_app_screen"/>
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size_15dp"
+            android:layout_marginRight="@dimen/size_15dp"
+            android:src="@drawable/app_c"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+    <TextView
+        android:textSize="16dp"
+        android:textColor="#ffffff"
+        android:id="@+id/tv_three_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_12sp"
+        android:text="Get started!"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

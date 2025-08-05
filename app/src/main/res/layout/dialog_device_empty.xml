@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_poweroff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+        <TextView
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_dialog_empty_title"
+            android:background="@drawable/bg_dialog_title"
+            android:paddingLeft="11dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_30dp"
+            android:text="Device not found!"/>
+        <TextView
+            android:textSize="@dimen/size_18sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:id="@+id/tv_dialog_empty_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="@dimen/size_10dp"
+            android:text="Need help connecting?"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:textSize="@dimen/size_16dp"
+                android:textColor="#d2fff9"
+                android:gravity="center"
+                android:id="@+id/tv_empty_ok"
+                android:background="@drawable/bg_mirror_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:textSize="@dimen/size_16dp"
+                android:textColor="#d2fff9"
+                android:gravity="center"
+                android:id="@+id/tv_empty_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Try again"
+                android:layout_below="@+id/tv_empty_ok"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
