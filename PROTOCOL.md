@@ -68,3 +68,20 @@ http://<phone-ip>:<port>
 
 The projector or a browser can connect to this address to access the device’s storage.
 
+
+## 5. Device Discovery
+The app automatically locates projectors on the same network using the EShare discovery protocol. When a scan is initiated it calls `startFindDevice()` and listens for responses via `findDevices()`.
+
+Discovery is performed over UDP. The client broadcasts on port `57395` and awaits packets beginning with the text `deviceFound`. Each reply includes the projector's name and IP address, which is then available through the EShare API.
+
+After a device is selected the app retrieves its address using `getCurrentDevice().getIpAddress()` and uses that address for remote control and other features.
+
+Example:
+```java
+// begin discovery
+id.startFindDevice();
+id.findDevices(callback);
+
+// later, after selecting a device
+String ip = id.getCurrentDevice().getIpAddress();
+```
